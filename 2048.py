@@ -3,7 +3,7 @@
 from __future__ import print_function
 from random import randint
 import sys
-
+print("welcome to the hottest game of 2013")
 def getnums(f,r=[0,1,2,3],c=[0,1,2,3]):
     ints=[]
     for y in r:
@@ -79,6 +79,7 @@ def pprint(f):
             else:
                 print(nexttext+str(ele),end="|")
         print()
+    
 
 f=add_random(add_random(get_new_field()))
 while not (f==tilt_field(f,"w")==tilt_field(f,"a")
@@ -90,7 +91,7 @@ while not (f==tilt_field(f,"w")==tilt_field(f,"a")
     f2=tilt_field(f,cmd)
     if f2!=f:f=add_random(f2)
     if max_tile(f)==2048:
-        print("you win")
+        print("you the G.O.A.T. Fam")
         sys.exit(1)
 pprint(f)
-print("you lose")
+print("you took an L Fam")
